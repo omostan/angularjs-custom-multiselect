@@ -1,0 +1,26 @@
+{
+    "name": "@omostan/angularjs-custom-multiselect",
+    "version": "1.0.0",
+    "description": "AngularJS multiselect dropdown directive originally developed by [Stephen Long](https://github.com/long2know/angular-directives-general) for his blog. Due to the fact that I have made several changes to the directive and my recent decision to move to the new Angular 8, I have decided to move this custom version of the original to npm repository.",
+    "author": "Stanley Omoregie",
+	"credits": "All credits to [Stephen Long](https://github.com/long2know/angular-directives-general) for devoloping the original version of this directive.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/angularjs-custom-multiselect.git"
+    },
+    "homepage": "https://github.com/omostan/angularjs-custom-multiselect",
+    "main": "angularjs-custom-multiselect.min.js",
+    "keywords": [
+        "angular",
+        "angularjs",
+        "angular-js",
+        "directive",
+        "multiselect",
+        "multi-select",
+        "dropdown",
+        "drop-down"
+    ],
+    "license": "[Apache license](https://github.com/long2know/angular-directives-general/blob/master/LICENSE.md)",
+    "peerDependencies": {
+        "angular": "^1.5.0"
+    }
