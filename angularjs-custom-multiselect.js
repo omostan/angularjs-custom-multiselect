@@ -545,7 +545,8 @@
         return {
             restrict: 'E',
             replace: true,
-            require: ['^ngModel', '?^form'],
+            //require: ['^ngModel', '?^form'], // removed by Stanley omoregie on 29.10.2019 at 16:08 Hrs
+            require: ['^ngModel', '^?form'],
             templateUrl: 'template/multiselect/multiselectPopup.html',
             link: function(scope, element) {
                 var $dropdown = element.find(".dropdown-menu");
