@@ -48,7 +48,7 @@
     var multiselect = function($parse, $timeout, $filter, $document, $compile, $window, $position, optionParser) {
         return {
             restrict: 'EA',
-            require: ['ngModel', '?^form'],
+            require: ['ngModel', '^?form'], //require: ['ngModel', '?^form'], // modified by Stanley omoregie on 29.10.2019 at 16:08 Hrs
             link: function(originalScope, element, attrs, ctrls) {
                 var modelCtrl = ctrls[0]; //model setter executed upon match selection
                 var isComplex;
@@ -545,8 +545,7 @@
         return {
             restrict: 'E',
             replace: true,
-            //require: ['^ngModel', '?^form'], // removed by Stanley omoregie on 29.10.2019 at 16:08 Hrs
-            require: ['^ngModel', '^?form'],
+            require: ['^ngModel', '^?form'], //require: ['^ngModel', '?^form'], // modified by Stanley omoregie on 29.10.2019 at 16:08 Hrs
             templateUrl: 'template/multiselect/multiselectPopup.html',
             link: function(scope, element) {
                 var $dropdown = element.find(".dropdown-menu");
